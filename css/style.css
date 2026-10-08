@@ -284,10 +284,11 @@ input:focus { outline: none; border-color: var(--lime); }
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 280px;
+    height: 380px;
     width: 100%;
     padding: 0;
     background: linear-gradient(135deg, #131713, #24380f);
+
 }
 
 .banner img {
@@ -322,6 +323,11 @@ input:focus { outline: none; border-color: var(--lime); }
     font-size: 0.9rem;
 }
 
+.chips span:hover{
+    background-color: var(--lime);
+    color: #000;
+}
+
 .coach-card {
     display: flex;
     gap: 32px;
@@ -336,18 +342,18 @@ input:focus { outline: none; border-color: var(--lime); }
 .coach-photo {
     flex-shrink: 0;
     width: 220px;
-    height: 260px;
+    height: 330px;
     object-fit: cover;
     border: 2px solid var(--lime);
     border-radius: 10px;
     background: #1d2a14;
+    box-shadow: 0 0 40px var(--lime);
 }
 
 .coach-details h2 { font-size: 2.2rem; }
 .coach-role { color: var(--lime); margin-bottom: 12px; }
 .coach-details h4 { margin: 14px 0 4px; color: var(--muted); font-size: 0.95rem; }
 .coach-details ul { padding-left: 20px; }
-
 .back-link {
     display: block;
     margin-top: 30px;
