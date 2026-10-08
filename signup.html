@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | P Dynamo</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="brand">P.Dynamo</a>
+        <div class="nav-actions">
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="signup.html" class="btn btn-lime">Sign Up</a>
+            <a href="index.html#slots" class="btn btn-lime">Book Now</a>
+        </div>
+    </header>
+
+    <section class="auth-page">
+        <div class="auth-card">
+            <h2>Create Account</h2>
+            <!-- TODO (backend): set action to your endpoint -->
+            <form id="signup-form" action="#" method="post">
+                <label for="name">Full name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <label for="confirm">Confirm password</label>
+                <input type="password" id="confirm" name="confirm" required>
+                <p class="form-error" id="form-error"></p>
+                <button type="submit" class="btn btn-lime">Sign Up</button>
+            </form>
+            <p class="auth-switch">Already registered? <a href="login.html">Login</a></p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 P Dynamo Futsal Indoor Turf. All rights reserved.
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

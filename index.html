@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P Dynamo Futsal Indoor Turf</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html" class="brand">P.Dynamo</a>
+        <div class="nav-actions">
+            <a href="login.html" class="btn btn-outline">Login</a>
+            <a href="signup.html" class="btn btn-lime">Sign Up</a>
+            <a href="index.html#slots" class="btn btn-lime">Book Now</a>
+        </div>
+    </header>
+
+    <!-- ===== Logo / Hero ===== -->
+    <section class="hero" id="home">
+        <div class="logo-box">
+            <img id="logo" src="/images/logo.jpg" alt="">
+            </svg>
+        </div>
+        <h1>P Dynamo <span>Futsal Indoor Turf</span></h1>
+        <p>Play fast, train hard and book your game in seconds.</p>
+        <div class="hero-buttons">
+            <a href="#slots" class="btn btn-lime">Check Available Slots</a>
+            <a href="#academies" class="btn btn-outline">Join an Academy</a>
+        </div>
+    </section>
+
+    <!-- ===== Image marquee (add your images in /images as gallery-1.jpg ... gallery-6.jpg) ===== -->
+    <section class="gallery">
+        <div class="marquee">
+            <div class="marquee-track">
+                <div class="marquee-item"><img src="images/gallery-1.jpg" alt="P Dynamo turf photo 1"></div>
+                <div class="marquee-item"><img src="images/gallery-2.jpg" alt="P Dynamo turf photo 2"></div>
+                <div class="marquee-item"><img src="images/gallery-3.jpg" alt="P Dynamo turf photo 3"></div>
+                <div class="marquee-item"><img src="images/gallery-4.jpg" alt="P Dynamo turf photo 4"></div>
+                <div class="marquee-item"><img src="images/gallery-5.jpg" alt="P Dynamo turf photo 5"></div>
+                <div class="marquee-item"><img src="images/gallery-6.jpg" alt="P Dynamo turf photo 6"></div>
+                 <div class="marquee-item"><img src="images/gallery-7.jpg" alt="P Dynamo turf photo 6"></div
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Slot checker (logic in js/main.js) ===== -->
+    <section id="slots">
+        <h2 class="section-title">Available Slots</h2>
+        <p class="section-sub">Pick a date to see which one-hour turf slots are open.</p>
+        <div class="slot-box">
+            <label for="slot-date">Date</label>
+            <input type="date" id="slot-date">
+            <div class="legend">
+                <span class="legend-item"><span class="dot"></span> Available</span>
+                <span class="legend-item"><span class="dot unavailable"></span> Unavailable</span>
+                <span class="legend-item"><span class="dot selected"></span> Selected</span>
+            </div>
+            <div id="slot-grid" class="slot-grid"></div>
+            <div class="slot-footer">
+                <p id="slot-summary">No slot selected</p>
+                <button id="slot-book-btn" class="btn btn-lime" disabled>Book Selected Slot</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Academies ===== -->
+    <section id="academies">
+        <h2 class="section-title">Our Academies</h2>
+        <p class="section-sub">Coaching for every age, all under one roof.</p>
+        <div class="academy-grid">
+            <div class="academy-card">
+                <span class="academy-icon">🏏</span>
+                <h3>Cricket Academy</h3>
+                <div class="academy-info">
+                    <span><b>Timings:</b> 6:00 - 8:00 AM</span>
+                    <span><b>Charges:</b> ₹1,500 / month</span>
+                </div>
+                <a href="/academy/cricket.html" class="btn btn-outline">More Details</a>
+            </div>
+            <div class="academy-card">
+                <span class="academy-icon">⚽</span>
+                <h3>Football Academy</h3>
+                <div class="academy-info">
+                    <span><b>Timings:</b> 5:00 - 7:00 PM</span>
+                    <span><b>Charges:</b> ₹1,800 / month</span>
+                </div>
+                <a href="/academy/football.html" class="btn btn-outline">More Details</a>
+            </div>
+            <div class="academy-card">
+                <span class="academy-icon">🥋</span>
+                <h3>Karate Academy</h3>
+                <div class="academy-info">
+                    <span><b>Timings:</b> 7:00 - 8:30 AM</span>
+                    <span><b>Charges:</b> ₹1,200 / month</span>
+                </div>
+                <a href="/academy/karate.html" class="btn btn-outline">More Details</a>
+            </div>
+            <div class="academy-card">
+                <span class="academy-icon">💃</span>
+                <h3>Zumba Academy</h3>
+                <div class="academy-info">
+                    <span><b>Timings:</b> 7:00 - 8:00 PM</span>
+                    <span><b>Charges:</b> ₹1,000 / month</span>
+                </div>
+                <a href="/academy/zumba.html" class="btn btn-outline">More Details</a>
+            </div>
+            <div class="academy-card">
+                <span class="academy-icon">🧘</span>
+                <h3>Yoga Academy</h3>
+                <div class="academy-info">
+                    <span><b>Timings:</b> 6:00 - 7:00 AM</span>
+                    <span><b>Charges:</b> ₹900 / month</span>
+                </div>
+                <a href="/academy/yoga.html" class="btn btn-outline">More Details</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2026 P Dynamo Futsal Indoor Turf. All rights reserved.
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
