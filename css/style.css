@@ -93,7 +93,7 @@ h1, h2, h3 {
     letter-spacing: 1px;
 }
 
-.nav-actions {
+#nav-actions {
     display: flex;
     gap: 10px;
 }
@@ -157,7 +157,7 @@ h1, h2, h3 {
 
 /* Track holds two copies of the images, so move by half its width (+ half the gap) */
 @keyframes scroll {
-    to { transform: translateX(calc(-50% - 8px)); }
+    to { transform: translateX(calc(-100% - 8px)); }
 }
 
 /* ---------- Slot checker ---------- */
@@ -410,8 +410,8 @@ footer {
     section { padding: 50px 5%; }
     .navbar { padding: 12px 4%; }
     .brand { font-size: 1.5rem; }
-    .nav-actions { gap: 6px; }
-    .nav-actions .btn { padding: 7px 10px; font-size: 0.75rem; }
+    #nav-actions { gap: 6px; }
+    #nav-actions .btn { padding: 7px 10px; font-size: 0.75rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

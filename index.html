@@ -9,9 +9,9 @@
 <body>
     <header class="navbar">
         <a href="index.html" class="brand">P.Dynamo</a>
-        <div class="nav-actions">
-            <a href="login.html" class="btn btn-outline">Login</a>
-            <a href="signup.html" class="btn btn-lime">Sign Up</a>
+        <div id="nav-actions">
+            <a href="/accounting /login/login.html" class="btn btn-outline">Login</a>
+            <a href="/accounting /signup/signup.html" class="btn btn-lime">Sign Up</a>
             <a href="index.html#slots" class="btn btn-lime">Book Now</a>
         </div>
     </header>
@@ -23,7 +23,7 @@
             </svg>
         </div>
         <h1>P Dynamo <span>Futsal</span></h1>
-        <p>Play fast, train hard and book your game in seconds.</p>
+        <p>Play fast, train hard and book your game in seconds. <br /> First Turf in Siliguri</p>
         <div class="hero-buttons">
             <a href="#slots" class="btn btn-lime">Check Available Slots</a>
             <a href="#academies" class="btn btn-outline">Join an Academy</a>
@@ -40,8 +40,14 @@
                 <div class="marquee-item"><img src="images/gallery-4.jpg" alt="P Dynamo turf photo 4"></div>
                 <div class="marquee-item"><img src="images/gallery-5.jpg" alt="P Dynamo turf photo 5"></div>
                 <div class="marquee-item"><img src="images/gallery-6.jpg" alt="P Dynamo turf photo 6"></div>
-                 <div class="marquee-item"><img src="images/gallery-7.jpg" alt="P Dynamo turf photo 6"></div
-            </div>
+                 <div class="marquee-item"><img src="images/gallery-7.jpg" alt="P Dynamo turf photo 6"></div>
+                  <div class="marquee-item"><img src="images/gallery-8.jpg" alt="P Dynamo turf photo 6"></div>
+                  <div class="marquee-item"><img src="images/gallery-9.jpg" alt="P Dynamo turf photo 6"></div>
+                  <div class="marquee-item"><img src="images/gallery-10.jpg" alt="P Dynamo turf photo 6"></div>
+                  <div class="marquee-item"><img src="images/gallery-11.jpg" alt="P Dynamo turf photo 6"></div>
+                  <div class="marquee-item"><img src="images/gallery-12.jpg" alt="P Dynamo turf photo 6"></div>
+           
+                </div>
         </div>
     </section>
 
@@ -92,8 +98,8 @@
                 <span class="academy-icon">🥋</span>
                 <h3>Karate Academy</h3>
                 <div class="academy-info">
-                    <span><b>Timings:</b> 7:00 - 8:30 AM</span>
-                    <span><b>Charges:</b> ₹1,200 / month</span>
+                    <span><b>Monday, Wednesday , Thursday:</b> 6:00 - 7:30 PM</span>
+                    
                 </div>
                 <a href="/academy/karate.html" class="btn btn-outline">More Details</a>
             </div>
@@ -101,8 +107,8 @@
                 <span class="academy-icon">💃</span>
                 <h3>Zumba Academy</h3>
                 <div class="academy-info">
-                    <span><b>Timings:</b> 7:00 - 8:00 PM</span>
-                    <span><b>Charges:</b> ₹1,000 / month</span>
+                    <span><b>Monday -Friday Slot 1:</b> 9:00 - 10:00 AM</span>
+                    <span><b>Slot 2:</b> 10:00 - 11:00 AM</span>
                 </div>
                 <a href="/academy/zumba.html" class="btn btn-outline">More Details</a>
             </div>
@@ -110,8 +116,8 @@
                 <span class="academy-icon">🧘</span>
                 <h3>Yoga Academy</h3>
                 <div class="academy-info">
-                    <span><b>Timings:</b> 6:00 - 7:00 AM</span>
-                    <span><b>Charges:</b> ₹900 / month</span>
+                    <span><b>Monday - Friday :</b> 5:30 - 7:00 AM</span>
+                
                 </div>
                 <a href="/academy/yoga.html" class="btn btn-outline">More Details</a>
             </div>
@@ -121,12 +127,22 @@
     <footer>
         &copy; 2026 P Dynamo Futsal Indoor Turf. All rights reserved.
         <h4 style="color=white">Comtact Us:</h4>
-        <a href="https://wa.me/917760773100?text=Query%20related%20to%20bookings%20and%20classes%20@%20P.Dynamo%20Futsal" style="color:lime">+91 77607 73100</a>
+   
         <a href="https://wa.me/918250139133?text=Query%20related%20to%20bookings%20and%20classes%20@%20P.Dynamo%20Futsal" style="color:lime">+91 82501 39133</a>
-        <br />
+        
         <a href="https://wa.me/917356419628?text=Query%20related%20to%20bookings%20and%20classes%20@%20P.Dynamo%20Futsal" style="color:lime">+91 73564 19628</a>
+        <br />
+             <a href="https://wa.me/917760773100?text=Query%20related%20to%20bookings%20and%20classes%20@%20P.Dynamo%20Futsal" style="color:lime">+91 77607 73100</a>
     </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 
-    <script src="js/main.js"></script>
+<!-- Firebase Firestore -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="/firebase.js"></script>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>

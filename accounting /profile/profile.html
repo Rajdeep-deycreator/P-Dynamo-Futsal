@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P.Dynamo - Profile</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/accounting /profile/profile.css">
+</head>
+<body class="dynamo-profile-body">
+    
+    <header class="dynamo-header">
+        <a href="/" class="dynamo-logo">P.DYNAMO</a>
+    </header>
+
+    <!-- TOP SECTION - Dark with lime glow -->
+    <section class="profile-hero">
+        <div class="glow-lime"></div>
+        <div class="glow-lime-2"></div>
+        <div class="profile-hero-content">
+            <div class="avatar-circle" id="avatarLetter">P</div>
+            <h1 id="profileName" class="profile-name">Loading...</h1>
+            <p id="profileEmail" class="profile-email">loading@email.com</p>
+        </div>
+    </section>
+
+    <!-- BOX SECTION -->
+    <section class="profile-container">
+        <div class="profile-box">
+            <div class="profile-tabs">
+                <a href="#current" class="tab-btn active">My Bookings</a>
+                <a href="#previous" class="tab-btn" data-tab="previous">Previous Bookings</a>
+            </div>
+            <section id="current">
+            <div class="tab-content active" id="bookings">
+                <h3>Current Bookings</h3>
+                <div id="currentBookingsList" class="booking-list">
+                    <p class="empty-text">No active bookings found.</p>
+                </div>
+            </div>
+            </section>
+            <section id="previous">
+            <div class="tab-content" id="bookings">
+                <h3>Previous Bookings</h3>
+                <div id="previousBookingsList" class="booking-list">
+                    <p class="empty-text">No previous history.</p>
+                </div>
+            </div>
+            </section>
+
+            <button class="dynamo-btn-logout" onclick="logout()">Logout</button>
+        </div>
+    </section>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<script src="/firebase.js"></script>
+<script src="/js/main.js"></script>
+<script src="/accounting /profile/profile.js"></script>
+</html>
