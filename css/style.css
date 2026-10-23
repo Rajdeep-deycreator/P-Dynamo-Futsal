@@ -400,6 +400,25 @@ footer {
     color: var(--muted);
     border-top: 1px solid var(--border);
 }
+.price{
+    border: 5px solid var(--lime);
+    border-radius: 20px;
+    margin: 20px;
+    margin-top: 50px;
+    padding: 5px;
+    box-shadow: 0 0 80px var(--lime);
+}
+.price:hover{
+    background: var(--lime);
+    color: #000;
+    margin: 16px;
+    margin-top: 46px;
+    transform: translateX(-3px);
+    box-shadow: none;
+}
+.price p{
+    color:#909090;
+}
 
 /* ---------- Responsive ---------- */
 @media (max-width: 700px) {

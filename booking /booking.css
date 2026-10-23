@@ -1,0 +1,189 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body - Black Background */
+body {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: block;
+  justify-content: center;
+  padding: 0px;
+}
+
+/* Main Card */
+.card {
+  width: 100%;
+  max-width: 450px;
+  background-color: #111111;
+  border: 1px solid #b6f006;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+/* Heading */
+h1 {
+  color: #b6f006;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: #aaaaaa;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  color: #ffffff;
+  outline: none;
+}
+
+input:focus {
+  border-color: #b6f006;
+}
+
+/* Time Slots Grid */
+.slots {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Single Slot Button */
+.slot {
+  padding: 10px;
+  background-color: #222222;
+  border: 1px solid #333333;
+  color: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.slot:hover {
+  border-color: #b6f006;
+}
+.slot:disabled{
+  cursor: not-allowed;
+  border: 2px solid red;
+  color: grey;
+}
+/* Active Slot - Orange */
+.slot.active {
+  background-color: #b6f006;
+  color: #000000;
+  border-color: #b6f006;
+}
+
+/* Submit Button */
+.submit {
+  width: 100%;
+  margin-top: 25px;
+  padding: 14px;
+  background-color: #b6f006;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #b6f006;
+}
+
+/* Output Box - Data will show here */
+#output {
+  margin-top: 20px;
+  background-color: #000000;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px dashed #b6f006;
+  display: none;
+  line-height: 1.8;
+}
+select{
+  width: 100%;
+  padding: 12px;
+  background-color: #000000;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  color: #ffffff;
+  outline: none;
+}
+#subtotal{
+  margin-top: 20px;
+  background-color: #000000;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px dashed #b6f006;
+  line-height: 1.8;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+}
+#serviceDetails{
+  border-radius: 5px;
+  margin:10px;
+  border: 1px solid #b6f006;
+  background:#000000;
+}
+#serviceDetails input{
+  width: 90%;
+  margin:5%;
+  background:#b6f006;
+  color:#FFFFFF;
+}
+h3{ color:#b6f006}
+#subtotal_card{
+  border-radius: 5px;
+  margin:10px;
+  border: 1px solid #b6f006;
+  background:#000000;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  align-items: center;
+}
+#subtotal_card span{
+  color: #454545;
+  text-align: right;
+}
+#totaldiv{
+  margin-top: auto;
+  background: #b6f006;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  align-items: center;
+  color: #FFFFFF;
+}
+#totaldiv span{
+  text-align: right;
+}
+footer{
+  border-top: 1px solid #545454;
+  text-align: center;
+  margin-top: 15px;
+  padding: 5px;
+  background: #2C2C2C;
+  color: #b6f006;
+}
+footer a{
+  color: #ff6a00;
+}

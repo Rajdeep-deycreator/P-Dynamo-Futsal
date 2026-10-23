@@ -1,0 +1,135 @@
+/* ===== BASE ===== */
+body {
+  margin: 0;
+  background: #0a0a0a;
+  color: #fff;
+  font-family: Inter, sans-serif;
+}
+
+/* ===== NAVBAR ===== */
+.k2-navbar {
+  background: #141414;
+  border-bottom: 1px solid #222;
+  padding: 12px 20px;
+
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.k2-nav-left h2 {
+  margin: 0;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.k2-nav-left span {
+  color: #b6ff00;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+.k2-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.k2-nav-right p {
+  margin: 0;
+  color: #aaa;
+  font-size: 14px;
+}
+
+/* logout button */
+.logout-btn {
+  background: #b6ff00;
+  color: #000;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #b6ff00;
+}
+
+/* ===== BODY ===== */
+.k2-dashboard-body {
+  padding: 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.section-header h3 {
+  margin: 0;
+}
+
+.section-header span {
+  color: #666;
+  font-size: 13px;
+}
+
+/* ===== TABLE ===== */
+.table-wrapper {
+  background: #161616;
+  border: 1px solid #222;
+  border-radius: 14px;
+  overflow-x: auto;
+}
+
+.k2-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.k2-table th {
+  text-align: left;
+  padding: 12px 14px;
+  color: #b6ff00;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #222;
+}
+
+.k2-table td {
+  padding: 12px 14px;
+  font-size: 14px;
+  color: #ccc;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.k2-table tr:hover td {
+  background: #1c1c1c;
+}
+
+/* status dot */
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+a{
+  color:#b6ff00;
+  margin-left: 8px;
+}

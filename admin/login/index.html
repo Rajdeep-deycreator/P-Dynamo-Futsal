@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K2 - Admin Login</title>
+    <link rel="stylesheet" href="/admin/login/admin-login.css">
+</head>
+<body class="k2-auth-body">
+    <div class="glow-orange-bg"></div>
+    <div class="k2-auth-container">
+        <div class="k2-auth-card">
+            <div class="k2-logo-auth">
+                <h1>Futsal</h1>
+                <p>ADMIN PANEL</p>
+            </div>
+
+            <form class="k2-form">
+                <div class="k2-input-group">
+                    <label>Email</label>
+                    <input type="email" id="adminEmail" placeholder="admin@k2.com" required>
+                </div>
+
+                <div class="k2-input-group">
+                    <label>Password</label>
+                    <input type="password" id="adminPassword" placeholder="Enter password" required>
+                </div>
+
+                <p id="errorMsg" class="error-text"></p>
+
+                <input type="button" class="k2-btn-primary" onclick="adminLogin()" value="Login as Admin">
+                <a href="/" class="back-link">← Back to Home</a>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="/firebase.js"></script>
+<script src="/admin/login/login.js"></script>
+</html>

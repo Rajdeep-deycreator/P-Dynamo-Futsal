@@ -64,14 +64,40 @@
     padding:10px 18px; border-radius:20px; cursor:pointer;
 }
 .tab-btn.active{ background:#c6ff00; color:#000; border-color:#c6ff00; font-weight:700; }
-#bookings{
-    border: 2px solid #c6ff00;
+.tab-content{
+    border-bottom: 2px solid #c6ff00;
+    border-top: 2px solid #c6ff00;
     border-radius: 7px;
-    margin-top: 15px
+    margin-top: 15px;
+    padding: 20px ;
+    min-height: 200px;
 }
-.booking-list .empty-text{ color:#555; font-size:14px; }
+
+.booking-list .empty-text{ color:#555; font-size:14px; margin-top: 30px; text-align: center;}
 .dynamo-btn-logout{
     width:90%; margin-top:25px; background:transparent;
     border:1px solid #ff4d4d; color:#ff4d4d; padding:12px; border-radius:10px; cursor:pointer;
 }
 .dynamo-btn-logout:hover{ background:#ff4d4d; color:#fff; }
+
+#serviceCard{
+  background-color: #000;
+  border: 2px solid #bfff00;
+  margin: 10px;
+  border-radius: 8px;
+  padding:10px;
+}
+#serviceCard h1{
+  color:#bfff00;
+  text-align: center;
+}
+#serviceCard span{
+  text-align: right;
+  color: #bfff00;
+}
+#serviceSummary{
+  border:2px dashed #595959;
+  background: #000000;
+  padding: 10px;
+  margin: 10px;
+}

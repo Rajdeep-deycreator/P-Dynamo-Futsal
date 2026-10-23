@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bookings - Futsal</title>
+<link rel="stylesheet" href="/admin/bookings/booking.css">
+</head>
+<body>
+<nav class="navbar"><h2>Futsal<span>bookings</span></h2><a href="/admin/dashboard /index.html">← Dashboard</a> <a href="#curren">Current Bookings</a></nav>
+
+<div class="container">
+  <div class="card">
+    <div id="current">
+      <div id="current-nav">
+        <h3>Current Bookings</h3>
+        <input type="date" id="currentDate">
+      </div>
+      <div id="current-data">
+        <p id="noData">No Data yet</p>
+      </div>
+    </div>
+     <div id="previous">
+      <div id="previous-nav">
+        <h3>Previous Bookings</h3>
+        <input type="date" id="previousDate">
+      </div>
+      <div id="previous-data">
+        <p id="noData">No Data yet</p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  
+  <!-- Firebase Firestore -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="/firebase.js"></script>
+<script src="/main.js"></script>
+<script src="/admin/bookings/booking.js"></script>
+</body>
+</html>

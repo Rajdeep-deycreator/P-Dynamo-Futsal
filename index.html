@@ -10,9 +10,10 @@
     <header class="navbar">
         <a href="index.html" class="brand">P.Dynamo</a>
         <div id="nav-actions">
+            <a href="/admin/login/index.html" class="btn btn-lime">Admin</a>
             <a href="/accounting /login/login.html" class="btn btn-outline">Login</a>
             <a href="/accounting /signup/signup.html" class="btn btn-lime">Sign Up</a>
-            <a href="index.html#slots" class="btn btn-lime">Book Now</a>
+
         </div>
     </header>
 
@@ -25,8 +26,9 @@
         <h1>P Dynamo <span>Futsal</span></h1>
         <p>Play fast, train hard and book your game in seconds. <br /> First Turf in Siliguri</p>
         <div class="hero-buttons">
-            <a href="#slots" class="btn btn-lime">Check Available Slots</a>
+            <a href="#slots" class="btn btn-lime">Check price</a>
             <a href="#academies" class="btn btn-outline">Join an Academy</a>
+              <a href="/booking /index.html" class="btn btn-outline">Book a Slot</a>
         </div>
     </section>
 
@@ -53,22 +55,15 @@
 
     <!-- ===== Slot checker (logic in js/main.js) ===== -->
     <section id="slots">
-        <h2 class="section-title">Available Slots</h2>
-        <p class="section-sub">Pick a date to see which one-hour turf slots are open.</p>
-        <div class="slot-box">
-            <label for="slot-date">Date</label>
-            <input type="date" id="slot-date">
-            <div class="legend">
-                <span class="legend-item"><span class="dot"></span> Available</span>
-                <span class="legend-item"><span class="dot unavailable"></span> Unavailable</span>
-                <span class="legend-item"><span class="dot selected"></span> Selected</span>
-            </div>
-            <div id="slot-grid" class="slot-grid"></div>
-            <div class="slot-footer">
-                <p id="slot-summary">No slot selected</p>
-                <button id="slot-book-btn" class="btn btn-lime" disabled>Book Selected Slot</button>
-            </div>
+        <div class="price">
+            <h1>Monday-Friday</h1>
+            <p>₹1500 /hr</p>
         </div>
+        <div class="price">
+            <h1>Saturday, Sunday</h1>
+            <p>₹2000 /hr</p>
+        </div>
+
     </section>
 
     <!-- ===== Academies ===== -->

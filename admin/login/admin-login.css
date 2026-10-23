@@ -1,0 +1,31 @@
+.k2-auth-body{
+    background:#0a0a0a; margin:0; min-height:100vh;
+    display:flex; align-items:center; justify-content:center;
+    font-family:'Inter',sans-serif; position:relative; overflow:hidden;
+}
+.glow-orange-bg{
+    position:absolute; width:600px; height:600px;
+    background: radial-gradient(circle, #b6ff00 0%, transparent 70%);
+    top:50%; left:50%; transform:translate(-50%,-50%); filter:blur(30px);
+}
+.k2-auth-container{ width:100%; max-width:400px; padding:20px; position:relative; z-index:2; }
+.k2-auth-card{
+    background:#161616; border:1px solid #2a2a2a; border-radius:20px;
+    padding:30px; box-shadow: 0 0 40px rgba(255,106,0,0.1);
+}
+.k2-logo-auth h1{ color:#b6ff00; text-align:center; margin:0; font-weight:900; }
+.k2-logo-auth p{ color:#666; text-align:center; font-size:12px; letter-spacing:3px; margin-top:5px; }
+.k2-input-group{ margin-top:18px; }
+.k2-input-group label{ color:#888; font-size:13px; display:block; margin-bottom:6px; }
+.k2-input-group input{
+    width:100%; background:#0e0e0e; border:1px solid #2a2a2a; color:#fff;
+    padding:12px 14px; border-radius:10px; outline:none; box-sizing:border-box;
+}
+.k2-input-group input:focus{ border-color:#b6ff00; }
+.k2-btn-primary{
+    width:100%; margin-top:22px; background:#b6ff00; color:#000;
+    border:none; padding:13px; border-radius:10px; font-weight:800; cursor:pointer;
+}
+.k2-btn-primary:hover{ background:#b6ff00; box-shadow:0 0 20px rgba(255,106,0,0.4); }
+.error-text{ color:#ff3b3b; font-size:13px; min-height:18px; margin-top:10px; text-align:center; }
+.back-link{ display:block; text-align:center; margin-top:18px; color:#666; font-size:13px; text-decoration:none; }

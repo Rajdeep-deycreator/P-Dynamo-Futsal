@@ -112,10 +112,11 @@ var email
   function check(){
     email= localStorage.getItem("FutsalEmail")
     loginStatus= localStorage.getItem("FutsalLogin")
-    if (email && loginStatus){
+    if (email && loginStatus==="true"){
       var nav=document.getElementById("nav-actions")
       retrive(email)
       nav.innerHTML=""
+      document.getElementById("foot").innerHTML=""
     }
   }
   
@@ -124,9 +125,12 @@ var email
       if (snap.exists){
         var userData=snap.data()
         name=userData.Name
+        localStorage.setItem("FutsalName",name)
+        ph=userData.Phone_Number
+        localStorage.setItem("FutsalPh",ph)
         console.log(name)
         var nav=document.getElementById("nav-actions")
-        nav.innerHTML="<a href='/accounting /profile/profile.html' class='btn btn-lime'>"+name+"</a>"
+        nav.innerHTML="<a href='/booking /index.html' class='btn btn-lime'>Book Now</a><a href='/accounting /profile/profile.html' class='btn btn-lime'>"+name+"</a>"
       }else{
         console.log("no data")
       }
