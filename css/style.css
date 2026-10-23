@@ -437,3 +437,14 @@ footer {
     .marquee-track { animation: none; }
     html { scroll-behavior: auto; }
 }
+#map{
+  //transform: translateX(-5px);
+  margin: 0 auto;
+  padding:0;
+}
+
+#heading{
+  padding: 5px;
+  border-bottom: 2px solid #555555;
+  margin: 3px;
+}

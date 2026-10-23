@@ -101,3 +101,14 @@
   padding: 10px;
   margin: 10px;
 }
+.reviewButton{
+    background-color: #2033FF;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    padding: 3px;
+    font-size: 20px;
+    width: 90%;
+    margin: 5%;
+    box-shadow: 0 0 60px #2033FF;
+}

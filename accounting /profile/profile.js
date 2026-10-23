@@ -41,7 +41,7 @@ function retrivePreviousService(){
             var data=information.data()
             console.log(data)
             var servic= data.time
-            card.innerHTML=`<h1><span>\t ${information.id}</span></h1><div id="serviceSummary"><p>Service:<br>${servic}<br></div>Ammount:<span>${data.totalamount}</span></p>`
+            card.innerHTML=`<h1><span>\t ${information.id}</span></h1><div id="serviceSummary"><p>Slot:<br>${servic}<br></div>Ammount:<span>${data.totalamount}</span></p><button href='https://maps.app.goo.gl/kfQpnQ4taVh3t4GQ6' class="reviewButton" onclick=review()>Rate us on Google</button>`
             card.id="serviceCard"
         
             previous.appendChild(card)
@@ -51,5 +51,8 @@ function retrivePreviousService(){
     })
 }
 
+function review(){
+    window.location.href="https://maps.app.goo.gl/kfQpnQ4taVh3t4GQ6"
+}
 
 
