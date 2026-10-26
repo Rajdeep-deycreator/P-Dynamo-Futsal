@@ -225,7 +225,7 @@ async function book() {
             "Content-Type": "application/json"
           },
           body: JSON.stringify({
-            to: "deyrajdeep569@gmail.com",
+            to: "pdynamofutsal@gmail.com",
             subject: "New Futsal Booking",
             message:
               "<h2>New Futsal Booking</h2>" +
