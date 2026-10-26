@@ -1,0 +1,8 @@
+
+User-agent: *
+Allow: /
+
+Disallow: /admin/
+Disallow: /accounting/
+
+Sitemap: https://pdynamofutsal.in/sitemap.xml

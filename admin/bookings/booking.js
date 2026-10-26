@@ -41,7 +41,7 @@ function getCurrrent(date) {
       card.innerHTML=`<h3>${details.name}</h3><p>Email: ${details.email}<br>Phone: ${details.phone}</p><h4>Date: ${details.date}</h4>`
       serviceCard.innerHTML=`<p>${time}</p><h3>Total:${details.totalamount}</h3>`
       card.appendChild(serviceCard)
-      card.innerHTML+=`<span><button  class="cardAction" onclick="finish('${data.id}','${details.email}','${details.date}')">Finish Booking</button>`
+      card.innerHTML+=`<span><button  class="cardAction" onclick="finish('${data.id}','${details.email}','${details.date}')">Finish Booking</button></span><span><button  class="cardAction-delete" onclick="del('${data.id}','${details.date}')">Cancel Booking</button>`
       curentBookings.appendChild(card)
     
     })
@@ -81,6 +81,13 @@ function finish(id,email,date) {
     }).catch((error)=>{
       console.log(error.message)
     })
+  }).catch((error)=>{
+    console.log(error.message)
+  })
+}
+function del(id, date) {
+  db.collection("bookings").doc("active").collection(date).doc(id).delete().then(()=>{
+    alert("Booking cancelled ")
   }).catch((error)=>{
     console.log(error.message)
   })

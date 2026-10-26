@@ -22,7 +22,6 @@ function loadAllUsers(){
                 <td>${i++}</td>
                 <td>${name}</td>
                 <td>${email}</td>
-                <td>${membership}</td>
             </tr>`;
         });
         tbody.innerHTML = html;

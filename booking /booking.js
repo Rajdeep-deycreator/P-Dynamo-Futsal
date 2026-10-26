@@ -313,8 +313,8 @@ async function updateTimeSlot(date) {
 function rate(day) {
 
   if (day === 0 || day === 6) {
-    return 2000;
+    return 1800;
   }
 
-  return 1500;
+  return 1300;
 }
