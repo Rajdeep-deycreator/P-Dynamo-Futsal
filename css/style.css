@@ -284,7 +284,7 @@ input:focus { outline: none; border-color: var(--lime); }
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 380px;
+    height: 470px;
     width: 100%;
     padding: 0;
     background: linear-gradient(135deg, #131713, #24380f);
@@ -447,4 +447,43 @@ footer {
   padding: 5px;
   border-bottom: 2px solid #555555;
   margin: 3px;
+}
+.btn-lime-event { background: var(--lime); color: #090b09; 
+    margin:2px;
+}
+
+#route {
+    flex-shrink: 0;
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border: 2px solid var(--lime);
+    border-radius: 10px;
+    background: #1d2a14;
+    box-shadow: 0 0 40px var(--lime);
+}
+.Checkpoint-card{
+    border: 2px solid #303030;
+    border-radius: 5px;
+    margin:20px;
+    padding: 5px;
+    text-align: center;
+}
+.Checkpoint-card p{
+    color: var(--lime);
+}
+.Checkpoint-card:hover{
+    border: 2px solid var(--lime);
+    box-shadow: 0 0 30px var(--lime);
+    transform: translateX(-7px);
+}
+table{
+    border:3px solid var(--lime);
+    box-shadow: 0 0 15px var(--lime);
+}
+table th{
+    color: var(--lime);
+}
+table td{
+    border: 1px solid var(--lime);
 }
