@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marathon solo runner registration </title>
+  <link rel="stylesheet" href="/events/marathon2026/registration/registration.css">
+</head>
+<body>
+  <div class="card">
+    <h1>P Dynamo Futsal-Winter Marathon 2026</h1>
+
+    <form id="form">
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Enter name" required>
+
+      <label>Phone Number</label>
+      <input type="tel" id="phone" placeholder="Enter phone" required>
+
+      <label>Email</label>
+      <input type="email" id="email" placeholder="Enter email" required>
+      <label >Where are You From?</label>
+      <input type="text" id="address" placeholder="Format: City/Town,State">
+      <div id="lor">
+      <span id="canditate">
+        <label for="">Runner's Name</label>
+        <input type="text" placeholder="Runner's Name" id="candidate-name" class="canditate-name">
+        <label for="">Runner's T-shirt Size</label>
+        <select id="tshirt" class="tshirt" required>
+        <option value="">Runner's T-shirt size</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option>
+        <option value="XXL">XXL</option>
+      </select>
+   
+     <label>Select Runner's Gender</label>
+      <select id="gender" class="gender"  required>
+        <option value="">Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+      </span>
+      <input type="button" value="Add Runner" id="ad" onclick="add()">
+      </div>
+   
+     
+
+
+      <input type="button" onclick="registerGroup()" class="submit" value="Register Now"></input>
+      <!--div id="subtotal">
+        
+      </div-->
+    </form>
+
+    <!--div id="output"></div-->
+  </div>
+  </p>
+  </footer>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  
+  <!-- Firebase Firestore -->
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+  <script src="/firebase.js"></script>
+<script src="/js/main.js"></script>
+<script src="/admin/marathon/add/registration/solo.js"></script>
+</body>
+</html>
